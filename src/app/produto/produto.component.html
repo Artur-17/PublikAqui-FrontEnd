@@ -1,0 +1,7 @@
+<div class="titulo-container">
+  <h3>Produtos</h3>
+  <button class="novo-produto" (click)="inserir()" >Novo produto</button>
+</div>
+<hr/>
+
+<app-produto-lista [input-produtos]='produtos' (onEdit)='editar($event)'></app-produto-lista>

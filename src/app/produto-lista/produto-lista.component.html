@@ -1,0 +1,7 @@
+<div *ngIf="produtos">
+  <app-produto-card class="app-card"
+      *ngFor="let item of produtos"
+      [produto]='item'
+      (onEdit)='listaProdutoEdit($event)'>
+  </app-produto-card>
+</div>

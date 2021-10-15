@@ -1,0 +1,45 @@
+<div class="modal-header">
+  Cadastro de Produto
+</div>
+
+<form *ngIf="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="modal-body">
+
+    <div class="app-input-group">
+      <label class="app-input-label">Código de Barras</label>
+      <input class="app-input" type="text" formControlName='codigoBarras' />
+    </div>
+  </div>
+
+  <div class="app-input-group">
+    <label class="app-input-label">Descrição</label>
+    <input class="app-input" type="text" formControlName='Descricao' />
+  </div>
+
+  <div class="app-input-group">
+    <label class="app-input-label">Quantidade</label>
+    <input class="app-input" type="text" formControlName='quantidade' />
+  </div>
+
+  <div class="app-input-group">
+    <label class="app-input-label">Preco de custo</label>
+    <input class="app-input" type="text" formControlName='precoCusto' />
+  </div>
+
+  <div class="app-input-group">
+    <label class="app-input-label">Desconto</label>
+    <input class="app-input" type="text" formControlName='desconto' />
+  </div>
+
+  <div class="app-input-group">
+    <label class="app-input-label">Preco de Venda</label>
+    <input class="app-input" type="text" formControlName='precoVenda' />
+  </div>
+
+<div class="modal-footer">
+  <button type="submit" class="btn btn-primary">Salvar</button>
+</div>
+
+</form>
+
+

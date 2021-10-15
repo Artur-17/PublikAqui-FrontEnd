@@ -1,0 +1,53 @@
+body{
+  margin: 0px;
+}
+
+.logo {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+
+
+  b{
+    color: rgb(217, 228, 68);
+  }
+
+  outline: none;
+
+}
+
+.menu {
+  margin: 0px;
+  display: flex;
+  padding: 15px;
+  background-color: rgb(64, 65, 64);
+  color: #fff;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  div {
+    margin-right: 20px;
+  }
+}
+
+.menu-item {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.menu-item:hover{
+  background-color: rgb(201, 218, 105);
+  color: gray;
+}
+
+.link-active {
+  background-color: rgb(30, 31, 30);
+}
+
+.login {
+  margin-left: 300px ;
+}

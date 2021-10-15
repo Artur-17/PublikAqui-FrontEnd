@@ -1,0 +1,29 @@
+.app-input-group,
+.app-input-group-flex {
+    display: block;
+    width: 100%;
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.app-input-group-flex {
+    display: flex;
+}
+
+.app-input-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.app-input {
+    display: block;
+    width: 100%;
+}
+
+.app-checkbox {
+    display: flex;
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
