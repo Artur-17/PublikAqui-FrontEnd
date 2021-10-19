@@ -38,17 +38,13 @@ export class ProdutoCadastroComponent implements OnInit {
       return;
     }
 
-    let link;
-
     if ((this.produto.id) && (this.produto.id > 0)) {
       this.form.get('id').setValue(this.produto.id);
-      link = 'https://localhost:44324/api/produto/atualizar';
     } else {
       this.form.get('id').setValue(0);
-      link = 'https://localhost:44324/api/produto/inserir';
     }
 
-    this.httpClient.post(link, this.form.value).subscribe(
+    this.httpClient.post('https://localhost:44324/api/produto/CadastrarOuAtualizar', this.form.value).subscribe(
       (apiRetorno: any) => {
         if (apiRetorno.sucesso) {
           this.activeModal.close(apiRetorno.produto);
